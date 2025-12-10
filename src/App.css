@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  width: 100%;
+}
+
+.container-app {
+  width: 100%;
+  background-color: #9f795f;
+}
+
+/* LOGO */
+.section-logo {
+  padding: 15px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PRESENTACIÓN */
+.section-presentation {
+  width: 100%;
+  height: 100%;
+  background-size: 130%;
+  background-position: center left;
+}
+
+.container-info {
+  background-color: #0005;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(1.7rem, 3vw, 3rem);
+  font-family: "Poppins", sans-serif;
+  max-width: 200px;
+}
+
+button {
+  background-color: white;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+/* BENEFICIOS */
+.section-beneficios {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.section-beneficios h2 {
+  font-size: 1.8rem;
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-beneficios__ul {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section-beneficios__ul li {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+/* CÓMO FUNCIONA */
+.section-galeria {
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  background-size: 160%;
+  background-position: left center;
+  margin-top: 20px;
+}
+
+.section-galeria-overlay {
+  min-height: 300px;
+  height: 100%;
+  background-color: #0006;
+  padding: 30px 20px;
+}
+
+.section-galeria-overlay div {
+  display: flex;
+  flex-direction: column;
+}
+.section-galeria-overlay button {
+  margin-left: 10px;
+ 
+}
+
+.section-galeria__ol {
+  max-width: 200px;
+  color: white;
+  padding: 10px;
+}
+
+.section-galeria__ol li {
+  margin-bottom: 15px;
+  font-size: clamp(1.2rem, 2.2dvw, 2rem);
+  font-weight: bold;
+  list-style: decimal;
+}
+
+/* PLAN */
+.section-plan {
+  background-color: white;
+  color: #9f795f;
+  padding: 40px 20px;
+}
+
+.section-plan h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-plan h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.section-plan ul {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.section-plan li {
+  margin-bottom: 10px;
+}
+
+.section-plan a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+  color: #9f795f;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: center;
+  font-size: clamp(1.2rem,2.2dvw, 2rem);
+  width: fit-content;
+}
+.section-plan a span {
+  border: 1px solid #9f795f;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* PREGUNTAS FRECUENTES */
+.section-question {
+  color: white;
+  padding: 40px 20px;
+  font-size: 1.2rem;
+}
+
+.section-question ul {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-question li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2d2d2d;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+  font-size: clamp(1rem, 2.2dvw, 1.5rem);
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.container-whatsapp {
+  width: clamp(2.5rem, 2.2dvw, 3.5rem);
+  height: clamp(2.5rem, 2.2dvw, 3.5rem);;
+}
+
+.container-whatsapp img {
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------------------------------------------media querys----------------------------------*/
+@media screen and (min-width: 550px) {
+
+  /* PRESENTACIÓN */
+  .section-presentation {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    max-width: 600px;
+  }
+
+  .section-galeria {
+    background-size: cover;
+  }
+
+  .section-galeria-overlay div button {
+    max-width: 600px;
+  }
+
+  .section-galeria__ol {
+    max-width: 600px;
+    padding-left: 50px;
+  }
+
+}
