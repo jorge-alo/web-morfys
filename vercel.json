@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "https://web-morfys.vercel.app/"
+    },
+    {
+      "source": "/panel",
+      "destination": "https://morfys-local.vercel.app/"
+    },
+    {
+      "source": "/panel/(.*)",
+      "destination": "https://morfys-local.vercel.app/$1"
+    },
+    {
+      "source": "/:local",
+      "destination": "https://morfys.vercel.app/:local"
+    },
+    {
+      "source": "/:local/(.*)",
+      "destination": "https://morfys.vercel.app/:local/$1"
+    }
+  ]
+}
