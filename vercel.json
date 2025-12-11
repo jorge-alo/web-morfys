@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "https://web-morfys.vercel.app/"
-    },
-    {
       "source": "/panel",
       "destination": "https://morfys-local.vercel.app/"
     },
@@ -14,11 +10,21 @@
     },
     {
       "source": "/:local",
+      "has": [
+        { "type": "host", "value": "morfis.com.ar" }
+      ],
       "destination": "https://morfys.vercel.app/:local"
     },
     {
       "source": "/:local/(.*)",
+      "has": [
+        { "type": "host", "value": "morfis.com.ar" }
+      ],
       "destination": "https://morfys.vercel.app/:local/$1"
+    },
+    {
+      "source": "/",
+      "destination": "https://web-morfys.vercel.app/"
     }
   ]
 }
