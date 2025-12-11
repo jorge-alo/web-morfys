@@ -1,24 +1,29 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/panel",
-      "destination": "https://morfys-local.vercel.app/"
+      "destination": "https://morfys-local.vercel.app/",
+      "permanent": false
     },
     {
       "source": "/panel/(.*)",
-      "destination": "https://morfys-local.vercel.app/$1"
+      "destination": "https://morfys-local.vercel.app/$1",
+      "permanent": false
     },
     {
       "source": "/:local",
-      "destination": "https://morfys.vercel.app/:local"
+      "destination": "https://morfys.vercel.app/:local",
+      "permanent": false
     },
     {
       "source": "/:local/(.*)",
-      "destination": "https://morfys.vercel.app/:local/$1"
+      "destination": "https://morfys.vercel.app/:local/$1",
+      "permanent": false
     },
     {
       "source": "/",
-      "destination": "https://web-morfys.vercel.app/"
+      "destination": "https://web-morfys.vercel.app/",
+      "permanent": false
     }
   ]
 }
