@@ -10,16 +10,10 @@
     },
     {
       "source": "/:local",
-      "has": [
-        { "type": "host", "value": "morfis.com.ar" }
-      ],
       "destination": "https://morfys.vercel.app/:local"
     },
     {
       "source": "/:local/(.*)",
-      "has": [
-        { "type": "host", "value": "morfis.com.ar" }
-      ],
       "destination": "https://morfys.vercel.app/:local/$1"
     },
     {
