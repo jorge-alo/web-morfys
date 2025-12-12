@@ -7,7 +7,7 @@ import recepcionista from './assets/recepcionista.png'
 export const App = () => {
 
   const handleDemo = () => {
-    window.open('https://morfys.vercel.app/morfis', '_blank');
+    window.open('https://morfis.com.ar/morfis', '_blank');
   }
   return (
     <div className="container-app">
