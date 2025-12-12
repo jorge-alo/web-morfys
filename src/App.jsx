@@ -52,7 +52,7 @@ export const App = () => {
                 <li>El cliente ve todo ordenado.</li>
                 <li> Arma su pedido y lo envía por WhatsApp.</li>
               </ol>
-              <button onClick={handleDemo}>Ver menu de ejmplo</button>
+              <button onClick={handleDemo}>Ver menú de ejemplo</button>
             </div>
           </div>
         </section>
@@ -92,11 +92,11 @@ export const App = () => {
 
       {/* FOOTER */}
       <footer>
-        <p>Morfys — Menús digitales para casas de comida</p>
+        <p>Morfis — Menús digitales para casas de comida</p>
         <a href="https://wa.me/5491144040093" target="_blank">
           <div className='container-whatsapp'><img src={whatsapp} alt="imagen de whatsapp" /></div>Contactar por WhatsApp
         </a>
-        <p>© 2025 Morfys — Todos los derechos reservados</p>
+        <p>© 2025 Morfis — Todos los derechos reservados</p>
       </footer>
 
     </div>
