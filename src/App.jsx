@@ -1,5 +1,5 @@
 import './App.css'
-import logo from './assets/logo-morfys.jpg'
+import logo from './assets/morfis-logo.png'
 import fondo from './assets/fondo.png'
 import whatsapp from './assets/whatsapp.png'
 import recepcionista from './assets/recepcionista.png'
