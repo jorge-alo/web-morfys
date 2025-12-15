@@ -1,6 +1,5 @@
 {
   "rewrites": [
-
     {
       "source": "/panel/assets/(.*)",
       "destination": "https://morfys-local.vercel.app/assets/$1"
@@ -9,8 +8,6 @@
       "source": "/panel/(.*)\\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)",
       "destination": "https://morfys-local.vercel.app/$1.$2"
     },
-
-    
     {
       "source": "/panel",
       "destination": "https://morfys-local.vercel.app/"
@@ -19,8 +16,10 @@
       "source": "/panel/(.*)",
       "destination": "https://morfys-local.vercel.app/$1"
     },
-    
-    
+    {
+      "source": "/reset-password/(.*)",
+      "destination": "https://morfys.vercel.app/reset-password/$1"
+    },
     {
       "source": "/assets/(.*)",
       "destination": "https://morfys.vercel.app/assets/$1"
@@ -29,7 +28,6 @@
       "source": "/(.*)\\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)",
       "destination": "https://morfys.vercel.app/$1.$2"
     },
-    
     {
       "source": "/:local",
       "destination": "https://morfys.vercel.app/:local"
