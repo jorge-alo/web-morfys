@@ -17,7 +17,7 @@
       "destination": "https://morfys-local.vercel.app/$1"
     },
     {
-      "source": "/reset-password/(.*)",
+      "source": "/panel/reset-password/(.*)",
       "destination": "https://morfys.vercel.app/reset-password/$1"
     },
     {
